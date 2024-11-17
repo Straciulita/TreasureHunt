@@ -1,0 +1,66 @@
+/* Reset și stiluri de bază */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9694e3;
+    display: flex; /*  layout-ul principal */
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+/* Container pentru conținut */
+.container {
+    display: flex; 
+    flex-direction: row; /* Aliniere pe orizontala */
+    gap: 20px; /* Spațiu între elemente */
+}
+
+/* Imagine */
+.game {
+    flex-shrink: 0; /* Evită micșorarea imaginii */
+}
+
+.game img {
+    width: 700px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    cursor: crosshair; 
+}
+
+/* Text și status */
+.text-container {
+    display: flex;
+    flex-direction: column; /* Elemente verticale */
+    gap: 20px; /* Spațiu între secțiuni */
+    max-width: 400px; /* Lățime maximă pentru text */
+}
+
+.Text,
+.game-status {
+    background-color: #b3fcf0;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.mesaj {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 18px;
+    background-color: #b3fcf0;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+h1, h3 {
+    color: #101021;
+    margin: 10px 0;
+}
+
+p {
+    color: #101021;
+    font-size: 16px;
+    margin: 5px 0;
+}

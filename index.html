@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Haunt!</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your external CSS file -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery -->
+    <script src="script.js" defer></script> <!-- Include the external JavaScript file -->
+</head>
+<body>
+    <div class="container">
+        <!-- Imaginea jocului -->
+        <div class="game">
+            <img id="map" src="/img/map.webp" alt="Map" width="700" height="700" />
+        </div>
+        
+        <!-- Text și statusul jocului -->
+        <div class="text-container">
+            <div class="Text">
+                <h1>Treasure Haunt!</h1>
+                <h3>How to play?</h3>
+                <p>Find the hidden treasure on the map by clicking on it. The program will guide you with hints like "COLD" or "HOT" to help you locate the treasure. Once you find it, you'll be congratulated, and the game will show the number of clicks it took.</p>
+            </div>
+            <div class="game-status">
+                <h3>Game status</h3>
+                <p>Clicks: <span id="clicks">0</span></p>
+                <p>Hint: <span id="hint">COLD</span></p>
+            </div>
+            <!-- Div pentru mesajele de încurajare -->
+            <div id="mesaj" class="mesaj">
+                <h3> Encouragement messages:</h3>
+                <p>The game says: <span id="msj">boo</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
